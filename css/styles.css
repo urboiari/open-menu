@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E8DCB9;
+  display: flex;
+  flex-flow: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6em;
+  font-family: arial, sans-serif;
+  color: #F8F8FF;
+}
+
+h3 {
+  font-size: 3em;
+  font-family: arial, sans-serif;
+  color: #F8F8FF;
+  /* transition: display 2s; */
+}
+
+.h1-wrapper {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  margin-right: 100px;
+  align-self: flex-end;
+  transition: opacity 1s;
+}
+
+.hamb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+  padding: 20px;
+  width: fit-content;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.line {
+  width: 50px;
+  height: 7px;
+  background-color: #F8F8FF;
+}
+
+.cross1 {
+  transform: rotate(45deg);
+}
+
+.cross2 {
+  margin-top: -7px;
+  transform: rotate(-45deg);
+}
+
+.menu {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30vh 0;
+  height: 30vh;
+  transition: opacity 1s;
+}
+
+.cross-menu {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  height: 40px;
+  padding: 40px 20px 0;
+  width: fit-content;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity 1;
+  }
+}
